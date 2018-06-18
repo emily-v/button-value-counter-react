@@ -1,27 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Counter extends React.Component{
  
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             count: 0
         };
     }
     
-    addIncrement(){
+    addIncrement(props){
         this.setState({
-            count: this.state.count + 1 //this.incrementValue
+            count: this.state.count + this.props.value
         });
     }
  
     render(){
         console.log(this.state);
-        //let incrementValue = null;
+        //let incrementValue = this.props.value;
         //if (this.state.clickedButton == 'one') incrementValue = 1;
         return <div>
             <div id="buttonsContainer">
-                <button onClick={() => {this.addIncrement();}}>1</button>
+                <button value={5} onClick={() => {this.addIncrement();}}>5</button>
                 <button>10</button>
                 <button>100</button>
                 <button>1000</button>
@@ -34,6 +35,11 @@ export default class Counter extends React.Component{
         </div>;
     }   
 }
+
+Counter.propTypes = {
+    value : PropTypes.number
+};
+
 
 /*class Button extends React.Component {
     handleClick = () => {
@@ -80,13 +86,13 @@ class App extends React.Component {
 }
 
 Button.propTypes = {
-        onClickFunctaion: PropTypes.number,
+        onClickFunction: PropTypes.number,
         incrementValue: PropTypes.number,
         counter: PropTypes.number
 };
 
 App.propTypes = {
-    onClickFunctaion: PropTypes.number,
+    onClickFunction: PropTypes.number,
     incrementValue: PropTypes.number,
     counter: PropTypes.number
 };

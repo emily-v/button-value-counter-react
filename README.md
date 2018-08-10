@@ -1,5 +1,9 @@
 # Hello World with React and Cloud 9
 
+### Demo Animation
+![button value counter demo](https://media.giphy.com/media/l2S6skBwrBBEjTYj3W/giphy.gif)
+
+
 #### Make sure you have node version 8
 ```sh
 $ nvm install 8

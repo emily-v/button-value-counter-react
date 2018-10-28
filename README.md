@@ -8,7 +8,7 @@ Uses React stateful and functional components to set State and pass to children 
 
 Built from the 4GeeksAcademy react-hello boilerplate here: https://github.com/4GeeksAcademy/react-hello
 
-### Run the Project
+### Run the Project from Cloud 9 IDE
 
 ##### Make sure you have node version 8
 ```sh

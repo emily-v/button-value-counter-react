@@ -4,7 +4,9 @@ Uses React stateful and functional components to set State and pass to children 
 
 ![button value counter demo](https://media.giphy.com/media/l2S6skBwrBBEjTYj3W/giphy.gif)
 
-Live App: https://emily-v.github.io/button-value-counter-react/
+### Live App: https://emily-v.github.io/button-value-counter-react/
+
+Built from the 4GeeksAcademy react-hello boilerplate here: https://github.com/4GeeksAcademy/react-hello
 
 ### Run the Project
 
